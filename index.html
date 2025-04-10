@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title> Vamo ri Vamo ri </title>   
+</head>
+<body>
+    <h1>🤣 Humor e Piadas 🤣</h1>
+    <div class="container">
+        <div class="left-column">
+            <div class="box" id="setup-box">
+                <h2>Piada</h2>
+                <div class="joke-content" id="joke-content">
+                    <p>Clique no botão "Obter Piada" para Vamo ri Vamo ri!</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-column">
+            <div class="box joke-options">
+                <h2>Menu de Piada</h2>
+                
+                <div class="joke-type-group">
+                    <div class="joke-type-title">Tipo de Piada:</div>
+                    <div class="joke-type-options">
+                        <label><input type="radio" name="joke_format" value="single"> Single (uma parte)</label>
+                        <label><input type="radio" name="joke_format" value="twopart" checked> Two-part (duas partes)</label>
+                        <label><input type="radio" name="joke_format" value="any"> Qualquer tipo</label>
+                    </div>
+                </div>
+                
+                <div class="category-group">
+                    <div class="category-title">Categorias:</div>
+                    <div class="category-options" id="joke-categories">
+                        <label><input type="checkbox" name="joke_type" value="Any" id="any-category" checked> Any (Qualquer)</label>
+                        <label><input type="checkbox" name="joke_type" value="Programming"> Programação</label>
+                        <label><input type="checkbox" name="joke_type" value="Miscellaneous"> Variado</label>
+                        <label><input type="checkbox" name="joke_type" value="Dark"> Humor Negro</label>
+                        <label><input type="checkbox" name="joke_type" value="Pun"> Trocadilho</label>
+                        <label><input type="checkbox" name="joke_type" value="Spooky"> Assustadora</label>
+                        <label><input type="checkbox" name="joke_type" value="Christmas"> Natal</label>
+                    </div>
+                </div>
+                
+                <div class="language-group">
+                    <div class="category-title">Idioma:</div>
+                    <select class="language-select" id="language-select">
+                        <option value="cs">cs - Czech (Tcheco)</option>
+                        <option value="de">de - German (Alemão)</option>
+                        <option value="en" selected>en - English (Inglês)</option>
+                        <option value="es">es - Spanish (Espanhol)</option>
+                        <option value="fr">fr - French (Francês)</option>
+                        <option value="pt">pt - Portuguese (Português)</option>
+                    </select>
+                </div>
+                
+                <div class="blacklist-group">
+                    <div class="blacklist-title">Filtros (Blacklist):</div>
+                    <div class="blacklist-options" id="blacklist-options">
+                        <label><input type="checkbox" name="blacklist" value="nsfw"> NSFW</label>
+                        <label><input type="checkbox" name="blacklist" value="religious"> Religioso</label>
+                        <label><input type="checkbox" name="blacklist" value="political"> Politico</label>
+                        <label><input type="checkbox" name="blacklist" value="racist"> Racista</label>
+                        <label><input type="checkbox" name="blacklist" value="sexist"> Sexista</label>
+                        <label><input type="checkbox" name="blacklist" value="explicit"> Explícito</label>
+                    </div>
+                </div>
+                
+                <button id="get-joke-btn">Obter Piada</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Áudio para o efeito de risada (hidden) -->
+    <audio id="vamorivamori" src="/assets/audio/vamori.ogg" preload="auto"></audio>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
